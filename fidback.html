@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback - Syahidul Hayyi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="container">
+  <h1 class="judul">Feedback</h1>
+  <h5 class="keterangan">Kelas 10 A - Asrama Ibnu Qoyyim</h5>
+  <hr class="hr">
+  
+
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html"><img src="images/index.png" alt="">Beranda</a></li>
+      <li><a href="biodata.html"><img src="images/bio.png" alt="">Biodata</a></li>
+      <li><a href="jadwal.html"><img src="images/jadwal.png" alt="">Jadwal</a></li>
+      <li><a href="galery.html"><img src="images/galery.png" alt="">Galeri</a></li>
+      <li><a href="fidback.html" class="active"> <img src="images/fidb.png" alt="">Feedback</a></li>
+    </ul>
+  </nav>
+
+  <div class="form-container">
+    <h2 class="section-title">📩 Formulir Kontak & Saran</h2>
+    <p class="p">
+      Berikan masukan terbaik Anda untuk pengembangan website profil ini.
+      Semua input bersifat wajib kecuali nama.
+    </p>
+
+    <form>
+      <label>Nama Anda (Opsional):</label>
+      <input type="text" placeholder="Tulis nama Anda">
+
+      <label>Email Anda:</label>
+      <input type="email" placeholder="nama@email.com" required>
+
+      <label>Rating Kepuasan Website (Skala 1-10):</label>
+      <input type="number" min="1" max="10" placeholder="Masukkan angka 1 hingga 10" required>
+
+      <label>Rekomendasi Website Ini?</label>
+      <div class="radio-group">
+        <label><input type="radio" name="rekomendasi" value="ya"> Ya, Sangat</label>
+        <label><input type="radio" name="rekomendasi" value="mungkin"> Mungkin Saja</label>
+        <label><input type="radio" name="rekomendasi" value="tidak"> Tidak</label>
+      </div>
+
+      <label>Topik yang paling menarik:</label>
+      <div class="checkbox-group">
+        <label><input type="checkbox" value="biodata"> Biodata</label>
+        <label><input type="checkbox" value="jadwal"> Jadwal</label>
+        <label><input type="checkbox" value="galeri"> Galeri</label>
+      </div>
+
+      <label>Pesan/Saran Lengkap:</label>
+      <textarea rows="4" placeholder="Tuliskan saran atau masukan Anda di sini..." required></textarea>
+
+      <button type="submit">Kirim</button>
+      <button type="reset">Reset</button>
+    </form>
+  </div>
+</body>
+</html>
